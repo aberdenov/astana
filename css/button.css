@@ -1,0 +1,106 @@
+a.button {
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	line-height: 3.25em;
+}
+a.button.button-reverse {
+	padding: 0 1.833em;
+}
+a.button.button-simple {
+	padding: 0 4.42em;
+}
+.button.button-reverse, .button.button-simple:hover{
+	color: #caa578;
+	outline: 1px solid #caa578;
+	background-color: transparent;
+}
+.button.button-reverse.button_fat{
+	outline-width: 2px;
+}
+
+.button.button-reverse:hover, .button.button-simple{
+	color: #fff;
+	background-color: #caa578;
+}
+
+.rhombus-line{
+	margin: 1em auto 2.4em;
+    width: 47em;   
+    text-align: center;
+    border-bottom: 1px solid #caa578;
+    height: 2.5em;
+}
+.button-rhombus{
+    background-color: #caa578;
+    display: inline-block;
+    width: 3.5em;
+    height: 3.5em;
+    transform: rotate(45deg);
+    position: relative;
+    margin: .75em;
+}
+.button-rhombus:hover{
+    background-color: #fff;
+    outline: 1px solid #caa578;
+}
+.button-rhombus:before{
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-color: #caa578;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.button-rhombus.down:before{
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.button-rhombus.down:hover:before,
+.button-rhombus.left:hover:before,
+.button-rhombus.right:hover:before{
+    background-color: #fff;
+    border-color: #caa578
+}
+
+.button-rhombus.left:before{
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.button-rhombus.right:before{
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+.button-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    width: 1em;
+    height: 1em;
+    transform: translateY(-50%) rotate(45deg);    
+}
+.button-arrow.button-arrow-left {
+    left: 2%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    /*box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.3);*/
+}
+
+.button-arrow.button-arrow-right {
+    right: 2%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    /*box-shadow: 3px -3px 5px 0px rgba(0,0,0,0.3);*/
+}
+.button-arrow:hover{
+    transform:translateY(-50%) rotate(45deg) scale(1.1);
+}
+
+

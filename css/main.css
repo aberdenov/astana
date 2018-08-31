@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 370px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+	width: 73%;
+	/*outline:1px solid red;*/
+	margin: 0 auto;
+}
+
+.container_small{
+	width: 60%;
+	margin: 0 auto;
+}
+
+section.sec-main,
+section.sec-info,
+section.sec-vidio,
+section.sec-why,
+section.sec-rooms,
+section.sec-partners,
+footer{
+	width: 100%;
+	position: relative;
+}
+section.sec-main,
+section.sec-info,
+section.sec-vidio,
+section.sec-why{
+	overflow-x: hidden;	
+}
+section.sec-main{
+	font-size: 12px;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	min-height: 100vh;
+}
+.bg{
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: #4e4440 url(../img/bg.png) no-repeat center center / cover;
+	z-index: -10;
+	overflow: hidden;
+}
+.bg:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background-color: rgba(8,7,7, .63);
+}
+
+section.sec-main .logo{
+    height: 3.04em;
+    width: auto;
+    position: absolute;
+    bottom: 2.4em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.sec-main .name{
+	display: block;
+	text-align: center;
+	margin-top: 40vh;
+}
+section.sec-main h1{
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: -1em auto 0;
+    padding: 0;
+    position: relative;
+}
+section.sec-main h3{
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 1.4em auto 1.2em;
+    padding: 0;
+    max-width: 17em;
+}
+section.sec-main .name .button.button-reverse{
+	margin-top: 1.1em;
+}
+
+h1.title{
+	color: #212020;
+	font-size: 2em;
+	font-weight: 700;
+	font-family: 'Roboto Slab', serif;
+	/*margin: 2.25em 0;*/
+
+	margin: 1em 0;
+	padding: 0;
+
+}
+

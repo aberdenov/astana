@@ -1,0 +1,101 @@
+section.sec-why{
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+	min-height: calc(100vh - 5.875em);
+}
+
+#tenants,
+#infrastructure,
+#advantages{
+	display: none;
+    margin: 2em 0;
+	padding: 0;
+	list-style-type: none;
+	flex-direction:row;
+    justify-content: space-around;
+	flex-wrap: wrap;
+	min-height: 50vh;
+    align-content: space-between;
+    padding-top: 1em;
+}
+
+#advantages{
+	display: flex;
+}
+.sec-why input{
+	display: none;
+}
+.sec-why label{
+	font-size: 1em;
+	cursor: pointer;
+	display: inline-block;	
+	color: #3c3429;
+	border: 1px solid #3c3429;
+	background-color: #fff;
+	line-height: 3.25em;
+	width: 14.5em;
+	text-align: center;
+  	border-right: none;
+  	position: relative;
+  	text-transform: uppercase;
+}
+.sec-why .tabs label:last-child {
+	border-right: 1px solid #3c3429;
+}
+.sec-why input:checked + label, 
+.sec-why label:hover{
+	background-color: #3c3429;
+	color: #fff;
+}
+.sec-why input:checked + label:after {
+    content: "";
+    position: absolute;
+    border: 1em solid transparent;
+    border-top: 1em solid #3c3429;
+    left: 50%;
+    bottom: -2em;
+    transform: translateX(-50%);
+}
+/*#advantages:checked ~ #advantages-content,
+#infrastructure:checked ~ #infrastructureContent,
+#tenants:checked ~ #tenantsContent{
+	display: flex;
+}*/
+.sec-why ul.container li{
+	text-align: center;
+	flex-basis:30%;
+}
+.sec-why ul.container li img{
+	width: auto;
+	height: 4.45em;
+	margin: 1em 0;
+}
+.sec-why ul.container li .text{
+	font-size: 1.16em;
+	text-transform: uppercase;
+	color:#20201f;	
+	max-width: 15em;
+	margin: 0 auto;
+    height: 3.25em;
+}
+
+
+@media only screen and (min-width: 1400px) {
+	section.sec-why{
+		font-size: 14px;
+	}
+	.sec-why ul.container li img{
+		height: 5.45em;
+	}
+	#tenants,
+	#infrastructure,
+	#advantages{
+		min-height: 45vh;
+    	padding-top: 3em;
+	}
+}
+

@@ -1,0 +1,44 @@
+.sec-vidio{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;    
+	min-height: calc(100vh - 5.875em);
+}
+
+.sec-vidio .bg{
+	position: absolute;
+	z-index: -10;
+	top:0;bottom: 0; left: 0;right: 0;
+	background: url(../img/bg-video.png) no-repeat center /cover; 
+}
+.sec-vidio .bg:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background-color: rgba(8,7,7, .63);
+}
+.sec-vidio .video{
+    padding: 1.5em;
+    width: 50vw;
+    border: 1px solid #caa578;
+    position: relative;
+}
+.sec-vidio #video-bg{
+	position: absolute;
+	top: 1.5em; bottom: 1.5em; left: 1.5em; right: 1.5em;
+	cursor: pointer;	
+    background: rgba(8,7,7, .7) url(../img/play_button.png) no-repeat center center /4.75em 3.25em;
+}
+.video-flag{
+    position: absolute;
+    top: -5.875em;
+	
+}
+
+@media only screen and (min-width: 1400px) {
+	section.sec-vidio{
+		font-size: 14px;
+	}
+}

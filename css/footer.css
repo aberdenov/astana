@@ -1,0 +1,65 @@
+footer{
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 16px;
+}
+
+footer .rights{
+	display: flex;
+	justify-content:flex-end;
+	align-items:center;
+	padding: 2em 0;
+}
+footer .rights span{
+	font-size: inherit;	
+}
+footer .right{
+  margin-right: auto;	
+}
+footer .rights img{
+	width: 3em;
+	height: 3em;
+	margin-left: .75em;
+}
+footer main{
+	display: flex;
+	justify-content:space-between;
+	align-items:flex-start;
+	padding-top:4.375em;
+	padding-bottom: 0.75em;
+}
+footer main img{
+	height: 5.25em;
+	width: auto;
+}
+footer .social{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+footer .social li{
+	margin-left: 2.5em;
+	float:left;
+}
+footer .social img{
+	height: 1.875em;
+	width: auto;
+}
+
+footer .contacts div{
+	font-size: inherit;
+    padding: .6em 0em .6em 4em;
+    background-position: left center;
+	background-repeat: no-repeat;
+}
+footer .address{
+	background-image: url(../img/periscope_logo.png);
+	background-size: 1.875em 2.25em;
+	margin-bottom: 0.75em;
+}
+footer .phone{
+	background-image: url(../img/phone_logo.png);
+	background-size: 1.875em 1.875em;
+}
+
+

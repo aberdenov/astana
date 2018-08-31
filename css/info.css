@@ -1,0 +1,81 @@
+.sec-info{
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	min-height: calc(100vh - 5.875em);
+	display: flex;
+  	flex-direction:column;
+  	justify-content:center;
+}
+.info-content{
+  	flex-direction:row;
+  	justify-content:space-between;
+  	align-items:center;
+  	display: flex;
+}
+.info-slider{
+	flex-basis: 50%;
+	/*background-color: #caa578;*/
+	width: 36.5vw;
+	height: 29em; 
+	position: relative;
+}
+.sl-info{
+    width: 100%;
+    height: 100%;
+}
+.sl-info-img{	
+    width: 100%;
+	height: 29em; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.info-text{
+	color: #353534;
+	text-align: left;
+	flex-basis: 50%;
+}
+.info-text h1{
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+}
+.info-text p{
+	font-size: 1.16em;
+	border-left: 1px solid #caa578;
+	margin: 6em 0;
+    padding: 0 1em 0 2.66em;
+	max-width: 31.25em;
+}
+.sec-info .footer{
+	color:#050505;
+	text-align: center;
+	text-transform: uppercase;	
+    margin-top: 3em;
+}
+.info-slider .sl-numbers{
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+	z-index: 100;
+	color:#fff;
+    /*box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.3);*/
+	font-size: 29px;
+}
+.info-slider .sl-numbers .sl-count{
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 1400px) {
+	.sec-info{
+		font-size: 14px;
+	}
+	.info-slider{
+		height: 60vh; 
+	}
+	.sl-info-img{	
+		height: 60vh; 
+	}
+}
+
